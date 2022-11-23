@@ -1,0 +1,40 @@
+/* Rating */ 
+
+.rating {
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 55rem;
+	background-color: var(--background-grey);
+	padding: 0.3rem;
+	border-radius: 10px;
+}
+
+.rating__text {
+	font-size: 1rem;
+	color: white;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+	text-align: center;
+	position: relative;
+	margin-top: 50.5rem;
+	z-index: 10;
+}
+
+.rating__button {
+	display: block;
+	font-size: 50px;
+	margin-top: 1rem;
+}
+
+.rating__star {
+	fill: white;
+	stroke: black;
+	stroke-width: 2px;
+}
+
+.rating__star:hover {
+	fill: lightblue;
+}

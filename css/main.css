@@ -1,0 +1,9 @@
+@import './variables.css';
+@import './fonts.css';
+@import './reset.css';
+@import './base.css';
+
+@import './modules/comment.css';
+@import './modules/header.css';
+@import './modules/rating.css';
+@import './modules/slideshow.css';
