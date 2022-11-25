@@ -1,16 +1,16 @@
 /* Comment */ 
 
 .comment {
-	width: 80vh;
-	height: 40vw;
+	width: 55vh;
+	height: 15vw;
 	display: flex;
 	position: fixed;
 	flex-flow: column nowrap;
 	justify-content: center;
 	left: 50%;
 	transform: translateX(-50%);
-	margin-top: 45rem;
 	color: var(--font-color-black);
+	margin-top: 55rem;
 }
 
 textarea {
@@ -22,14 +22,11 @@ textarea {
 .submit {
 	border: solid 2px black;
 	border-radius: 15px;
-	padding: 1rem;
-	margin: .5rem auto;
+	padding: .5rem;
+	margin: .2rem auto;
 	background: white;
 	width: 15vw;
 	height: 5vh;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%);
 }
 
 .submit:hover {
