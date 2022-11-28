@@ -2,22 +2,25 @@
 
 .rating {
 	display: flex;
-	position: absolute;
+	position: fixed;
 	left: 50%;
-	top: 50%;
+	top: 75%;
 	transform: translateX(-50%);
-	margin-top: 20rem;
 	padding: 0.3rem;
 	border-radius: 10px;
 	flex-direction: row-reverse;
+	margin-top: .1rem;
 }
 
 .rating__text {
+	width: 40vw;
+	height: 40vh;
 	font-size: 1rem;
 	color: white;
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black;
 	text-align: center;
+	margin-top: 18rem;
 }     
 
 input[type=radio] {
@@ -25,12 +28,12 @@ input[type=radio] {
 }
 
 label svg {
-	width: 40px;
-	height: 40px;
+	width: 4rem;
+	height: 3.5rem;
 }
 
 label svg polygon {
-	fill: #686868;
+	fill: white;
 	transition: 0.2s all ease-in-out;
 }
 

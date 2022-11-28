@@ -1,3 +1,5 @@
+export default function() {
+
 /* query selectors */
 const slideshow = document.querySelector('.slideshow');
 const slideshowSlides = document.querySelectorAll('.slideshow__slide');
@@ -9,14 +11,6 @@ const buttonNext = document.querySelector('.slideshow__button-next');
 buttonPrevious.addEventListener('click', handleButtonPreviousClick);
 buttonNext.addEventListener('click', handleButtonNextClick);
 window.addEventListener('keyup', handleWindowKeyUp);
-
-/* 
-	dette er også greit :^)
-
-	buttonDots.forEach((button, index) => {
-		...
-	});
-*/
 
 for (let index = 0; index < buttonDots.length; index += 1) {
 	buttonDots[index].addEventListener('click', event => {
@@ -65,13 +59,6 @@ function decreaseCurrentSlideIndex() {
 	console.log(`gå til slide index: ${currentSlideIndex}`)
 }
 
-// index				slides.length
-// 0					5
-// 1					5
-// 2					5
-// 3					5
-// 4					5
-// 5					off-by-one
 function increaseCurrentSlideIndex() {
 	if (currentSlideIndex < slideshowSlides.length - 1) {
 		currentSlideIndex += 1;
@@ -97,4 +84,5 @@ function updateSlideshowHTML() {
 	
 	slideshowSlides[currentSlideIndex].classList.add('slideshow__slide--active');
 	buttonDots[currentSlideIndex].classList.add('slideshow__button-dot--active');
+}
 }
