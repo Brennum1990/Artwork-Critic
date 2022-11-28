@@ -10,7 +10,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	color: var(--font-color-black);
-	margin-top: 55rem;
+	margin-top: 5rem;
 }
 
 textarea {
@@ -31,4 +31,4 @@ textarea {
 
 .submit:hover {
 	background: lightblue;
-}
+}  

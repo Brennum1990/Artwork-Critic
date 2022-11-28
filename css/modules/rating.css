@@ -2,14 +2,14 @@
 
 .rating {
 	display: flex;
-	position: fixed;
-	justify-content: center;
+	position: absolute;
 	left: 50%;
+	top: 50%;
 	transform: translateX(-50%);
-	margin-top: 51.5rem;
-	background-color: var(--background-grey);
+	margin-top: 20rem;
 	padding: 0.3rem;
 	border-radius: 10px;
+	flex-direction: row-reverse;
 }
 
 .rating__text {
@@ -18,83 +18,27 @@
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black;
 	text-align: center;
-}   
+}     
 
-.rating__button label {
-	color: lightblue;
-	display: block;
-	width: 50px;
-}
-
-.rating {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotateY(180deg);
-	display: flex;
-}
-.rating input {
+input[type=radio] {
 	display: none;
 }
-.rating label {
-	display: block;
-	cursor: pointer;
-	width: 150px;
+
+label svg {
+	width: 40px;
+	height: 40px;
 }
 
-.rating label:before {
-	content: '★';
-	position: relative;
-	display: block;
-	font-size: 150px;
-	color: black;
-}
-.rating label:after {
-	content: '★';
-	position: absolute;
-	display: block;
-	font-size: 150px;
-	color: deeppink;
-	top: 0;
-	opacity: 0;
-	transition: .6s;
+label svg polygon {
+	fill: #686868;
+	transition: 0.2s all ease-in-out;
 }
 
-/* .rating__button {
-	display: block;
-	cursor: pointer;
-	width: 50px;
-	fill: white;
-	stroke: black;
-	stroke-width: 2px;
-}  */
-
-/* .rating__button:before {
-	position: relative;
-	display: block;
-	font-size: 50px;
-	color: lightblue;
-} 
-
- 
-.rating__button:after {
-	position: relative;
-	display: block;
-	font-size: 50px;
-	top: 0;
-	opacity: 1;
-	transition: .5s;
-	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+input:not(:checked) ~ label:hover svg polygon,
+input:not(:checked) ~ label:hover ~ label svg polygon {
 	fill: lightblue;
 }
 
-.rating__button:hover:after {
-	position: relative;
-	display: block;
-	font-size: 50px;
-	top: 0;
-	opacity: 1;
-	transition: .5s;
-	text-shadow: 0 2px 5px rgba(0,0,0,.5);
-	fill: lightblue;
-}   */
+input:checked ~ label svg polygon {
+	fill: lightblue
+}
