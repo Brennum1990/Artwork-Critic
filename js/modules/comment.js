@@ -1,5 +1,5 @@
 export default function() {
-	
+
 	const showContainers = document.querySelectorAll('.comment__replies');
 
 	showContainers.forEach(btn => 
