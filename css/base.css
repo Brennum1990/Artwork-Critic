@@ -2,3 +2,8 @@ body {
 	background-color: var(--background-dark-grey);
 	font-family: 'Titan One';
 }
+
+button {
+	font: inherit;
+	cursor: pointer;
+}
