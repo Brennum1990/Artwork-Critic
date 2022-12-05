@@ -2,11 +2,22 @@
 
 .header {
 	width: 100%;
-	height: 3.5rem;
+	height: 4rem;
 	background: var(--background-grey);
-	text-align: center;
-	font-size: 2rem;
+	text-align: flex-start;
 	color: var(--font-color-white);
 	-webkit-text-stroke-width: 1.5px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: black; 
+	font-family: 'Sedgwick Ave Display';
+	position: fixed;
+}
+
+.header__text {
+	background-color: var(--background-dark-grey);
+	margin-left: 4em;
+	margin-top: .1em;
+	width: 13%;
+	font-size: 2.5rem;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
