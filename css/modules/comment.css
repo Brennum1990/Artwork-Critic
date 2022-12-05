@@ -4,19 +4,19 @@ input[type=text]:invalid {
 	border: red solid 1px;
 }
 
-.comments__container {
+.comment__container {
 	width: 20%;
 	display: flex;
 	position: fixed;
 	flex-direction: column;
 	height: 15em;
 	left: 85%;
-	top: 17.5%;
+	top: 25%;
 	transform: translateX(-50%);
-	margin: 2rem 0 0 0;
+	margin: auto;
 }
 
-.comments__container > label {
+.comment__container > label {
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ input[type=text]:invalid {
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black; 
 	align-self: center;
-	border-radius: 15px;
+	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 
@@ -44,3 +44,17 @@ input[type=text]:invalid {
 	background-color: lightgoldenrodyellow;
 	color: white;
 }
+
+.comment__board {
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	width: 20vw;
+	height: 66.2vh;
+	left: 86.5%;
+	top: 5.3%;
+	transform: translateX(-50%); 
+	margin: 2rem 0 0 0;
+	border-radius: 15px;
+}
+
