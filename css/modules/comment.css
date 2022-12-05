@@ -1,84 +1,46 @@
-/* Comment */ 
+/* Comments */
 
-.comment {
-	width: min(90%, 1140px);
-	margin: auto 2rem;
+input[type=text]:invalid {
+	border: red solid 1px;
+}
+
+.comments__container {
+	width: 20%;
 	display: flex;
 	position: fixed;
-	flex-flow: column nowrap;
-	justify-content: center;
-	left: 50%;
-	top: 20%;
+	flex-direction: column;
+	height: 15em;
+	left: 85%;
+	top: 17.5%;
 	transform: translateX(-50%);
-	color: var(--font-color-black); 
+	margin: 2rem 0 0 0;
 }
 
-.comment__container {
-	position: relative;
-	display: none; 
+.comments__container > label {
+  text-align: center;
 }
 
-.comment__container.opened {
-	display: block; 
-}
-
-.comment__container::before {
-	content: "";
-	background-color: lightgrey;
-	position: absolute;
-	min-height: 100%;
-	width: 1px;
-	left: -10px;
-}
-
-.comment__container:not(:first-child) {
-	margin-left: 3rem;
-	margin-top: 1rem;
-}
-
-.comment__card {
-	padding: 20px;
-	background-color: white;
-	border: 1px solid rgba(0,0,0,.3);
-	border-radius: .5rem;
-	min-width: 100%;
-	box-shadow: 0 0 50px rgba(0,0,0,.1);
-}
-
-.comment__card h3, 
-.comment__card p {
-	margin-bottom: 1rem;
-}
-
-.comment__card-footer {
-	display: flex;
-	font-size: .85rem;
-	opacity: .6;
-	gap: 30px;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-.comment__replies {
-	cursor: pointer;
-}
-
-textarea {
-	border-radius: 15px;
-	padding: 10px;
-	font-size: 1.2rem;
-}
-
-.submit {
-	border: solid 2px black;
+#comment{
+	background-color: lightgoldenrodyellow;
 	border-radius: 15px;
 	padding: .5rem;
-	margin: .2rem auto;
-	background: white;
-	width: 15vw;
-	height: 5vh;
 }
 
-.submit:hover {
-	background: lightblue;
-}   
+#addComments {
+	width: 20%;
+	padding: 5px;
+	background-color: var(--background-dark-grey);
+	color: var(--font-color-white);
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black; 
+	align-self: center;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+.wrapper > button {
+	margin-right: 5px;
+	padding: 5px;
+	background-color: lightgoldenrodyellow;
+	color: white;
+}
