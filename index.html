@@ -10,9 +10,12 @@
 	
 	<body>
 		<header class="header">
+			<div class="header__text">
 			Artwork critique
+			</div>
 		</header>
 
+		<div class="panel">
 		<section class="slideshow">
 			<div class="slideshow__controls">
 				<button class="slideshow__button-previous">PREVIOUS</button>
@@ -101,10 +104,19 @@
 						</svg>
 					</label>
 		</section>
+
+		<section class="comments">
+			<div class="container">
+				<label for="comment" name="comment">ADD YOUR COMMENT BELOW-</label>
+				<textarea id="comment" placeholder="Add a comment"></textarea>
+				<button id="addComments">Add</button>
+				<div id="allComments"></div>
+			</div>
+		</section>
 			
 			
 
-	<!-- <section class="comment__section">
+		<!-- <section class="comment__section">
 		<div class="comment">
 			<div class="comment__container opened" id="first-comment">
 				<div class="comment__card">
@@ -185,10 +197,11 @@
 				</div>
 			</div>
 		</div> 
-	</section> -->
+	</section>  -->
 			<!-- <textarea rows="3" placeholder="Leave a comment"></textarea>
 				<button class="submit" type="submit">POST COMMENT</button> -->
 		</div>  
+	</div>
 
 	</body>
 </html>
