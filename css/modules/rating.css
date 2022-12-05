@@ -5,8 +5,8 @@
 	flex-direction: row-reverse;
 	position: fixed;
 	height: 40vh;
-	left: 50%;
-	top: 75%;
+	left: 85%;
+	top: 20%;
 	transform: translateX(-50%);
 	padding: .5rem;
 	border-radius: 10px;
