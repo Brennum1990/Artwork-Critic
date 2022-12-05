@@ -2,7 +2,7 @@
 
 .header {
 	width: 100%;
-	height: 4rem;
+	height: 4em;
 	background: var(--background-grey);
 	text-align: flex-start;
 	color: var(--font-color-white);
@@ -17,7 +17,7 @@
 	margin-left: 4em;
 	margin-top: .1em;
 	width: 13%;
-	font-size: 2.5rem;
+	font-size: 2.5em;
 	border-radius: 15px;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
