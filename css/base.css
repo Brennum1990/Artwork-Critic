@@ -1,6 +1,17 @@
 body {
-	background-color: var(--background-dark-grey);
 	font-family: 'Titan One';
+}
+
+.background__image {
+	background: linear-gradient(180deg, #c9c9c9 55.21%, #363636 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 button {
