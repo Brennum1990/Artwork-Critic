@@ -2,7 +2,7 @@
 
 .slideshow {
 	position: fixed;
-	top: 40%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 80vw;
@@ -15,8 +15,8 @@
 	top: 0;
 	left: 0;
 	display: none;
-	width: 100%;
-	height: 100%;
+	width: 75%;
+	height: 110%;
 	border-radius: 15px;
 }
 
@@ -86,8 +86,8 @@ figcaption {
 
 .slideshow__dots {
 	position: absolute;
-	bottom: -2.5em;
-	left: 50%;
+	bottom: -7em;
+	left: 40%;
 	transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
