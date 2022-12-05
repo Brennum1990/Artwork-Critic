@@ -10,12 +10,14 @@
 	
 	<body>
 		<header class="header">
-			<div class="header__text">
-			Artwork critique
-			</div>
+			<nav class="navigation">
+				<a href="./main.html" class="header__text">Artwork critique</div>
+				<a href="">Categories</a>
+				<a href="./About us.html">About us</a>
+			</nav>
 		</header>
 
-		<div class="panel">
+		<main class="panel">
 		<section class="slideshow">
 			<div class="slideshow__controls">
 				<button class="slideshow__button-previous">PREVIOUS</button>
@@ -63,6 +65,7 @@
 			</div>
 		</section>
 		
+		<fieldset class="comment__board">
 		<section class="rating">
 				<input type="radio" id="star-1">
 					<label class="star" for="star-1">
@@ -105,7 +108,7 @@
 					</label>
 		</section>
 
-		<section class="comments">
+		<section class="comment">
 			<div class="comments__container">
 				<label for="comment" name="comment">ADD YOUR COMMENT BELOW-</label>
 				<textarea id="comment" placeholder="Add a comment"></textarea>
@@ -113,8 +116,11 @@
 				<div id="allComments"></div>
 			</div>
 		</section>
-		</div>  
+	</fieldset>
+		</main>  
 	</div>
+
+	<div class="background__image"></div>
 
 	</body>
 </html>
