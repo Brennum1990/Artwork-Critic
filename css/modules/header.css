@@ -3,28 +3,34 @@
 .header {
 	width: 100%;
 	height: 4em;
-	text-align: flex-start;
 	position: fixed;
-	background: var(--background-grey);
+	background: var(--background-lightblue);
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	padding: .3rem;
+	display: inline;
 }
 
-.header__text {
-	background-color: var(--background-dark-grey);
-	margin-left: 4em;
-	margin-top: .1em;
-	width: 13%;
-	border-radius: 15px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-}
-
-.navigation a {
+nav a {
 	text-decoration: none;
 	color: var(--font-color-white);
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black; 
-	font-family: 'Sedgwick Ave Display';
 	font-size: 2.5em;
-	margin: 0 0 2em 2em;
-	padding: 0.2em;
+	display: inline-block;
+	margin-left: 10rem;
+	font-family: 'Bebas Neue'; 
+}
+
+a:hover {
+	transform: scale(1.03);
+	transition: 0.3s all ease-in-out;
+}
+
+.header__logo {
+	background-color: var(--background-dark-grey);
+	width: 13%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	font-family: 'Sedgwick Ave Display'; 
+	text-align: center;
 }
