@@ -5,16 +5,16 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.panel__text {
+.about__us-text {
 	font-size: 2rem;
 	height: 40vh;
 	width: 40vw;
 	margin: 1em 0 1em 1em;
 	padding: 1em;
-	font-family: 'Titan One';
+	font-family: 'Bebas Neue';
 	font-size: 1.5em;
 	color: var(--font-color-white);
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: .8px;
 	-webkit-text-stroke-color: black; 
 	text-align: center;
 }
@@ -24,6 +24,25 @@
 	width: 40vw;
 	border-radius: 15px;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	margin: 3.5em 0 1em 1em;
-	object-fit: cover;
+	align-items: right;
+}
+
+.sm__logos {
+	background-color: var(--background-dark-grey);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 5rem;
+}
+
+.logos-icon {
+	width: 4em;
+	height: 4em;
+}
+
+.logos-icon:hover {
+	transform: scale(1.03);
+	transition: 0.2s all ease-in-out;
 }
