@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hovedprosjekt</title>
+
+		<link rel="stylesheet" href="./css/main.css">
+		<script type="module" src="./js/main.js"></script>
+	</head>
+	
+	<body>
+		<header class="header">
+			<nav class="navigation">
+				<a href="./main.html" class="header__logo">Artwork critic</div>
+				<a href="./character_modeling.html">Character Modeling</a>
+				<a href="./concept_art.html">Concept Art</a>
+				<a href="./storyboards.html">Storyboards</a>
+				<a href="./About us.html">About us</a>
+			</nav>
+		</header>
+
+	<main class="panel">
+		<section class="slideshow">
+			<div class="slideshow__controls">
+				<button class="slideshow__button-previous">PREVIOUS</button>
+				<button class="slideshow__button-next">NEXT</button>
+			</div>
+
+			<div class="slideshow__slides">
+				<figure class="slideshow__slide slideshow__slide--active">
+					<img class="slideshow__img" src="./assets/Concept Art/Robot_design.jpg" alt="Robot Design">
+					<figcaption class="slideshow__caption">'Robot Design' by Bastien Schmit</figcaption>
+				</figure>
+
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/Concept Art/Mining Town.jpg" alt="Mining Town">
+					<figcaption class="slideshow__caption">'Mining Town' by Markus Luotero</figcaption>
+				</figure>
+
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/Concept Art/War.jpg" alt="Siege of a castle">
+					<figcaption class="slideshow__caption">'War' by JIN LH</figcaption>
+				</figure>
+				
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/Concept Art/Watson Ruins.jpg" alt="Desolate winter landscape">
+					<figcaption class="slideshow__caption">'Watson Ruins' by 董 成昭</figcaption>
+				</figure>
+
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/Concept Art/If they were in a game.jpg" alt="three ruffneck characters">
+					<figcaption class="slideshow__caption">'If they were in a game' by Mehran Iranloo</figcaption>
+				</figure>
+
+				<figure class="slideshow__slide">
+					<img class="slideshow__img" src="./assets/Concept Art/Scavengers.jpg" alt="Spaceship wreckage">
+					<figcaption class="slideshow__caption">'Scavengers' by Wadim Kashin</figcaption>
+				</figure>
+			
+			<div class="slideshow__dots">
+				<button class="slideshow__button-dot slideshow__button-dot--active"></button>
+				<button class="slideshow__button-dot"></button>
+				<button class="slideshow__button-dot"></button>
+				<button class="slideshow__button-dot"></button>
+				<button class="slideshow__button-dot"></button>
+				<button class="slideshow__button-dot"></button>
+			</div>
+		</section> 
+
+		<section class="rating">
+				<input type="radio" id="star-1">
+					<label class="star" for="star-1">
+						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
+							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
+						</svg> 
+					</label>
+
+			 	<input type="radio" id="star-2">
+					<label class="star" for="star-2">
+						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
+							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
+						</svg>
+					</label>
+
+				<input type="radio" id="star-3">
+					<label class="star" for="star-3">
+						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
+							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
+						</svg>
+					</label>
+
+				<input type="radio" id="star-4">
+					<label class="star" for="star-4">
+						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
+							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
+						</svg>
+					</label>
+
+				<input type="radio" id="star-5">
+					<label class="star" for="star-5">
+						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
+							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
+						</svg>
+					</label>
+		</section>
+
+		<div class="container">
+			<label for="newComment" name="newComment">Add your comment below-</label>
+			<textarea id="newComment"></textarea>
+			<button id="addComments">Add Comment</button>
+			<div id="allComments"></div>
+	  </div>
+	</div>
+</main>
+	<div class="background__image"></div>
+
+	</body>
+</html>
