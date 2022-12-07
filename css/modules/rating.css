@@ -4,13 +4,16 @@
 	display: flex;
 	flex-direction: row-reverse;
 	position: fixed;
+	justify-content: center;
 	height: 5em;
-	left: 85%;
+	left: 87%;
 	top: 8%;
 	transform: translateX(-50%);
 	padding: .3rem;
 	border-radius: 10px;
 	margin: .5rem;
+	background-color: var(--background-dark-grey);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 
 input[type=radio] {
@@ -29,11 +32,11 @@ label svg polygon {
 
 input:not(:checked) ~ label:hover svg polygon,
 input:not(:checked) ~ label:hover ~ label svg polygon {
-	fill: lightblue;
-	transform: scale(1.07);
+	fill: #FFD467;
+	transform: scale(1.05);
 }
 
 input:checked ~ label svg polygon {
-	fill: lightblue;
-	transform: scale(1.07);
+	fill: #FFD467;
+	transform: scale(1.05);
 }
