@@ -33,10 +33,10 @@ label svg polygon {
 input:not(:checked) ~ label:hover svg polygon,
 input:not(:checked) ~ label:hover ~ label svg polygon {
 	fill: #FFD467;
-	transform: scale(1.05);
+	transform: scale(1.03);
 }
 
 input:checked ~ label svg polygon {
 	fill: #FFD467;
-	transform: scale(1.05);
+	transform: scale(1.03);
 }
