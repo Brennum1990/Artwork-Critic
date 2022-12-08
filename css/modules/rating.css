@@ -1,6 +1,6 @@
 /* Rating */ 
 
-.rating {
+/* .rating {
 	display: flex;
 	flex-direction: row-reverse;
 	position: fixed;
@@ -39,4 +39,41 @@ input:not(:checked) ~ label:hover ~ label svg polygon {
 input:checked ~ label svg polygon {
 	fill: #FFD467;
 	transform: scale(1.03);
-}
+}  */
+
+.rating {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	}
+	
+	.rating li {
+	list-style-type: none
+	}
+	
+	.rating-item {
+	border: 1px solid #fff;
+	cursor: pointer;
+	font-size:2em;
+	color: yellow;
+	}
+	
+	/* initial: make all stars full */
+	.rating-item::before {
+	content: "\2605";
+	}
+	
+	/* make until the clicked star (the rest) empty */
+	.rating-item.active ~ .rating-item::before {
+	content: "\2606";
+	}
+	
+	/* on hover make all full */
+	.rating:hover .rating-item::before {
+	content: "\2605";
+	}
+	
+	/* make until the hovered (the rest) empty */
+	.rating-item:hover ~ .rating-item::before {
+	content: "\2606";
+	}

@@ -4,7 +4,6 @@ export default function(comment) {
 	const btn = document.querySelector('.btn');
 	const clear = document.getElementById('clear')
 	const submit = document.querySelector('#submit')
-	// const comments = document.querySelector('#comment-box')
 	const comments = document.getElementById('comment-box');
 	
 	// array to store the comments

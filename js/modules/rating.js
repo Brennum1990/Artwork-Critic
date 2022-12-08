@@ -1,40 +1,17 @@
 export default function(Rating) {
-	var count = 0;
- 
-function result(){
-	if(count != 0){
-		document.getElementById('result').innerHTML = 
-		"<h3>Rating: <label class='text-primary'>" + count + "</label></h3>"
-		+ "<h3>Review</h3>"
-		+ "<p>"+document.getElementById("review").value+"</p>";
-	}else{
- 
+	const container = document.querySelector('.rating');
+	const items = container.querySelectorAll('.rating-item')
+	container.onclick = e => {
+	const elClass = e.target.classList;
+	
+	// change the rating if the user clicks on a different star
+	if (!elClass.contains('active')) {
+	items.forEach( 
+		// reset the active class on the star
+	item => item.classList.remove('active')
+	);
+	console.log(e.target.getAttribute("data-rate"));
+	elClass.add('active'); // add active class to the clicked star
 	}
+	};
 }
- 
-function startRating(item){
-	count=item.id[0];
-	sessionStorage.star = count;
-	for(var i=0;i<5;i++){
-		if(i < count){
-			document.getElementById((i+1)).style.color="yellow";
-		}
-		else{
-			document.getElementById((i+1)).style.color="black";
-		}
-	}
-}
-}
-
-// const allStars = document.querySelectorAll('.star');
-
-// 	allStars.forEach((star, i) => {
-// 		star.onclick = function () {
-// 			let currentStarLevel = i + 1;
-
-// 			allStars.forEach((star, j) => {
-// 				if(currentStarLevel >= j + 1)
-
-// 		})
-// 	}
-// })
