@@ -28,7 +28,8 @@ textarea {
 
 .comments {
 	position: relative;
-	left: 75%;
+	width: 15vw;
+	left: 50%;
 	top: 50%;
 	transform: translateX(-50%);
 	z-index: 15;
@@ -36,19 +37,20 @@ textarea {
 }
 
 .comments li:hover {
-    color: #FFFFFF;
-	 text-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	 transition: 0.3s all ease-in-out;
+ 	color: #FFFFFF;
+	text-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	transition: 0.3s all ease-in-out;
 }
 
 #comment-box {
-	font-size: 1.2rem;
-	width: fit-content;
+	font-size: 1.5rem;
 	padding: 5px;
 	color: var(--font-color-white);
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black; 
 	align-self: center;
+	width: fit-content;
+	word-wrap: break-word;
 }
 
 #clear,
