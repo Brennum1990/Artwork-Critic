@@ -89,14 +89,14 @@ figcaption {
 /* Slideshow dots */ 
 
 .slideshow__dots {
-	position: absolute;
-	bottom: -7em;
+	position: fixed;
 	left: 37.5%;
+	top: 112%;
 	transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
-	width: 100%;
-	z-index: 20;
+	width: 75%;
+	z-index: 10;
 }
 
 .slideshow__button-dot {
