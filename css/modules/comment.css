@@ -1,89 +1,78 @@
 /* Comment */
 
-/* input[type=text]:invalid {
-	border: red solid 1px;
-}
-
-.container {
-	width: 15vw;
+.comment__section {
+	width: 25vw;
 	display: flex;
 	position: absolute;
 	flex-direction: column;
-	height: 30rem;
 	left: 87.5%;
-	top: 20%;
+	top: 15%;
 	transform: translateX(-50%);
 	max-height: fit-content;
 }
 
-.container > label {
-  text-align: center;
-}
-
-#newComment{
-	background-color: lightgoldenrodyellow;
+textarea {  
+ 	overflow: hidden;
+ 	padding: 0.5rem;
+ 	width: 15vw;
+	height: 10vh;
+	font-size: 1.5rem;
+	font-family: 'Bebas Neue';
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 5px;
+	display: block;
 	border-radius: 10px;
-	padding: .5rem;
-	margin: .5rem;
-	font-size: 1rem;
-	font: inherit;
+	border: 6px solid #7490e8;
 }
 
-#addComments {
-	width: 50%;
-	padding: .5rem;
-	background-color: var(--background-dark-grey);
+.comments {
+	position: relative;
+	left: 75%;
+	top: 50%;
+	transform: translateX(-50%);
+	z-index: 15;
+	color: white;
+}
+
+.comments li:hover {
+    color: #FFFFFF;
+	 text-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	 transition: 0.3s all ease-in-out;
+}
+
+#comment-box {
+	font-size: 1.2rem;
+	width: fit-content;
+	padding: 5px;
 	color: var(--font-color-white);
 	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: black; 
-	align-self: flex-end;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	margin: .2rem;
-}
-
-.wrapper > button {
-	margin-right: 5px;
-	padding: 5px;
-	background-color: lightgoldenrodyellow;
-	color: white;
-} */
-
-* {
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	margin-bottom: 10px;
-}
-
-input[type=text]:invalid {
-	border: red solid 1px;
-}
-
-.container {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	margin-left: 20px;
-}
-.container > label {
-  text-align: center;
-}
-#comment{
-	background-color: cornflowerblue;
-}
-#addComments {
-	width: 20%;
-	padding: 5px;
-	background-color: darkblue;
-	color: white;
 	align-self: center;
 }
 
-.wrapper > button {
-	margin-right: 5px;
-	padding: 5px;
-	background-color: darkblue;
-	color: white;
-} 
+#clear,
+#submit {
+	border: solid 2px black;
+	border-radius: 15px;
+	padding: .5em;
+	background: white;
+	transition: 500ms;
+	font: inherit;
+	cursor: pointer;
+}
+
+.btn {
+	position: relative;
+	width: 15vw;
+	height: 5vh;
+	margin: auto;
+}
+
+#clear:hover {
+	background: rgb(221, 72, 72);
+}
+
+#submit:hover {
+	background: lightblue;
+}
