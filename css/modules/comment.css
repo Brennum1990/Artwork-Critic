@@ -23,15 +23,12 @@ textarea {
 	margin-bottom: 5px;
 	display: block;
 	border-radius: 10px;
-	border: 6px solid #7490e8;
+	border: 6px solid #58ADE7;
 }
 
 .comments {
 	position: relative;
 	width: 15vw;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%);
 	z-index: 15;
 	color: white;
 }
@@ -76,5 +73,5 @@ textarea {
 }
 
 #submit:hover {
-	background: lightblue;
+	background: #C5D1D9;
 }

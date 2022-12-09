@@ -1,79 +1,56 @@
 /* Rating */ 
 
-/* .rating {
+.rating {
 	display: flex;
-	flex-direction: row-reverse;
 	position: fixed;
 	justify-content: center;
-	height: 5em;
+	height: fit-content;
+	width: 15vw;
+	object-fit: cover;
 	left: 87%;
 	top: 8%;
 	transform: translateX(-50%);
-	padding: .3rem;
-	border-radius: 10px;
+	padding: .5rem;
 	margin: .5rem;
+	border-radius: 10px;
 	background-color: var(--background-dark-grey);
-	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 }
-
-input[type=radio] {
-	display: none;
-}
-
-label svg {
-	width: 4rem;
-	height: 3.5rem;
-}
-
-label svg polygon {
-	fill: white;
-	transition: 0.2s all ease-in-out;
-}
-
-input:not(:checked) ~ label:hover svg polygon,
-input:not(:checked) ~ label:hover ~ label svg polygon {
-	fill: #FFD467;
-	transform: scale(1.03);
-}
-
-input:checked ~ label svg polygon {
-	fill: #FFD467;
-	transform: scale(1.03);
-}  */
-
-.rating {
-	display: flex;
+	
+.rating__item {
+	font-size: 2.5rem;
+	color: #FFD467;
 	padding: 0;
-	margin: 0;
-	}
-	
-	.rating li {
-	list-style-type: none
-	}
-	
-	.rating-item {
-	border: 1px solid #fff;
-	cursor: pointer;
-	font-size:2em;
-	color: yellow;
-	}
-	
-	/* initial: make all stars full */
-	.rating-item::before {
+	border: none;
+	background: none;
+}
+
+.rating__item:hover {
+	transition: 0.2s all ease-in-out;
+	transform: scale(1.05);
+	text-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+/* stars full */
+
+.rating__item::before {
 	content: "\2605";
-	}
+}
 	
-	/* make until the clicked star (the rest) empty */
-	.rating-item.active ~ .rating-item::before {
+/* Make until the clicked star (the rest) empty */
+
+.rating__item.active ~ .rating__item::before {
 	content: "\2606";
-	}
+}
 	
-	/* on hover make all full */
-	.rating:hover .rating-item::before {
+/* stars full on hover */
+
+.rating__item:hover .rating__item::before {
 	content: "\2605";
-	}
+}
 	
-	/* make until the hovered (the rest) empty */
-	.rating-item:hover ~ .rating-item::before {
+/* make until the hovered (the rest) empty */
+
+.rating__item:hover ~ .rating__item::before {
 	content: "\2606";
-	}
+}

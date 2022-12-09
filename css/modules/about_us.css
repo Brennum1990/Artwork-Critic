@@ -1,7 +1,7 @@
 /* About us */
 
 .about__us {
-	background-color: var(--background-grey);
+	background-color: var(--background-lightblue);
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -25,7 +25,12 @@
 }
 
 p {
-	color: white;
+	color: var(--font-color-white);
+	-webkit-text-stroke-width: .6px;
+	-webkit-text-stroke-color: black; 
+	background-color: var(--background-dark-grey);
+	border-radius: 10px;
+	padding: .3rem;
 }
 
 h3 {
@@ -53,7 +58,7 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 	column-gap: 1rem;
-	margin-top: 10rem;
+	margin-top: 1.5rem;
 }
 
 .logos-icon {

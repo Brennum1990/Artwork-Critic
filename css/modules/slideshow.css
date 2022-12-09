@@ -83,7 +83,7 @@ figcaption {
 
 .slideshow__button-next:hover, 
 .slideshow__button-previous:hover {
-	background: lightblue;
+	background: #C5D1D9;
 }
 
 /* Slideshow dots */ 
@@ -109,7 +109,7 @@ figcaption {
 
 .slideshow__button-dot--active,
 .slideshow__button-dot:hover {
-	background: lightblue;
+	background: #58ADE7;
 }
 
 .slideshow__button-dot + .slideshow__button-dot {

@@ -1,5 +1,7 @@
 # Artwork-Critique
 
+I wanted to create a site similar to Artstation.com - a website where artists can shocase their creative work. 
+
 Coding Projects - Nested Comments with HTML, CSS and JS
 https://www.youtube.com/watch?v=2GjQzBWdDAc&t=11s
 

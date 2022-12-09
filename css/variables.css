@@ -3,6 +3,7 @@
 	--font-color-black: black;
 
 	--background-grey: grey;
-	--background-dark-grey: rgb(70, 70, 70);
-	--background-lightblue: lightblue; 
+	--background-dark-grey: #444444;
+	--background-lightblue: #C5D1D9; 
+	--background-blue: #58ADE7; 
 }
