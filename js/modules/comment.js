@@ -23,7 +23,7 @@ export default function(comment) {
 	  event.preventDefault();
 	  // reset the array  
 		comments_arr.length = 0;
-	  // re-genrate the comment html list
+	  // re-generate the comment html list
 	  display_comments();
 	}
 	
