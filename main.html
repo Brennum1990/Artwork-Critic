@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Hovedprosjekt</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=10.0">
+		<title>Artwork Critic</title>
 
 		<link rel="stylesheet" href="./css/main.css">
 		<script type="module" src="./js/main.js"></script>
@@ -66,57 +67,16 @@
 				<button class="slideshow__button-dot"></button>
 			</div>
 		</section>  
-<!-- 
-		<section class="rating">
-				<input type="radio" value="1" name="rating">
-					<label class="star" for="star-1">
-						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
-						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
-							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
-						</svg> 
-					</label>
-
-			 	<input type="radio" value="2" name="rating">
-					<label class="star" for="star-2">
-						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
-						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
-							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
-						</svg>
-					</label>
-
-				<input type="radio" value="3" name="rating">
-					<label class="star" for="star-3">
-						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
-						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
-							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
-						</svg>
-					</label>
-
-				<input type="radio" value="4" name="rating">
-					<label class="star" for="star-4">
-						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
-						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
-							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
-						</svg>
-					</label>
-
-				<input type="radio" value="5" name="rating">
-					<label class="star" for="star-5">
-						<svg viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
-						<polygon points="213.333,10.441 279.249,144.017 426.667,165.436 320,269.41 345.173,416.226 213.333,346.91 
-							 81.485,416.226 106.667,269.41 0,165.436 147.409,144.017 "/>
-						</svg>
-					</label>
-		</section>
-		<strong class="choice">Choose a rating</strong> -->
-
-		<ul class="rating">
-			<li class="rating-item" data-rate="1"></li>
-			<li class="rating-item active" data-rate="2"></li>
-			<li class="rating-item" data-rate="3"></li>
-			<li class="rating-item" data-rate="4"></li>
-			<li class="rating-item" data-rate="5"></li>
-		</ul>
+		
+	<section class="rating">
+		<ul class="rating__stars">
+			<button class="rating__item active" data-rate="1"></button>
+			<button class="rating__item" data-rate="2"></button>
+			<button class="rating__item" data-rate="3"></button>
+			<button class="rating__item" data-rate="4"></button>
+			<button class="rating__item" data-rate="5"></button>
+		</ul> 
+	</section>
 		
 		<section class="comment__section">
 			<form>
